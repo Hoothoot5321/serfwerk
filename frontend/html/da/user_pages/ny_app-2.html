@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <title>{{.User.Username}}</title>
+    {{template "components/header.html"}}
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/ny_app.css">
+    <script src="/frontend/js/pages/ny_app.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <main>
+
+        {{template "components/theme_button.html"}}
+        {{template "components/user_taskbar.html" .User.Username}}
+        <div class="wrapper">
+            <div class="filler"></div>
+
+            <div class="main_section">
+                <div class="wrapper_sui_2">
+
+                    <p class="app_info" id="ram">Ram: 512MB</p>
+                    <p class="app_info" id="lager">Lager: 2024MB</p>
+                    <p class="app_info" id="cpu">Cpu: 1</p>
+                    <p class="app_info" id="cpu_kraft">Kraft: 50%</p>
+                    <p class="app_info" id="pris">Pris: 0kr.</p>
+                </div>
+                <div class="wrapper_sui">
+                    <div class="section_one">
+                        {{template "components/status_msg.html"}}
+                        <div class="input_holder">
+                            <p class="input_label">App Name:</p>
+                            <input type="text" id="app_name" class="cust_input">
+                        </div>
+
+                        <div class="file_input_holder">
+                            <input id="file_upload" type="file" style="display: none;">
+                            <button class="upload_button">Upload Fil</button>
+                            <p class="file_title">Ingen filer</p>
+                        </div>
+                        <div class="input_holder">
+                            <p class="input_label">Run Cmd:</p>
+                            <input type="text" id="run_cmd" class="cust_input">
+                        </div>
+                        <div class="input_holder">
+                            <p class="input_label">Build Cmd:</p>
+                            <input type="text" id="build_cmd" class="cust_input">
+                        </div>
+
+                        <div class="input_holder">
+                            <p class="input_label">Port Num:</p>
+                            <input type="text" id="port_num" class="cust_input">
+                        </div>
+
+                    </div>
+
+                    <div class="section_two">
+                        <button class="cust_button" id="upload_button">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

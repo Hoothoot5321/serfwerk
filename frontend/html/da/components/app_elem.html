@@ -1,0 +1,16 @@
+{{define "components/app_elem.html"}}
+<link rel="stylesheet" type="text/css" href="/frontend/css/components/app_elem.css">
+<div class="app_wrapper">
+    <div class="app_name">
+        {{.AppName}}
+    </div>
+    <div>
+        {{if .Online}}
+        <div>Online</div>
+        {{else}}
+
+        <div>Offline</div>
+        {{end}}
+    </div>
+</div>
+{{end}}

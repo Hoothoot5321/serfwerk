@@ -1,0 +1,36 @@
+.theme_button_wrapper {
+    position: fixed;
+    top: 7vw;
+    right: 2vw;
+    cursor: pointer;
+}
+
+.theme_button {
+    width: 3vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.theme_button:hover.dark {
+    width: 3.5vw;
+    height: 3.5vw;
+    background: rgb(70, 70, 70);
+}
+
+.theme_button:hover.light {
+    width: 3.5vw;
+    height: 3.5vw;
+    background: rgb(200, 200, 200);
+}
+
+.dark {
+    background: rgb(0, 0, 0);
+}
+
+.light {
+    background: 255, 255, 255;
+}

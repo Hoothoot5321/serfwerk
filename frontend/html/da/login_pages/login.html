@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+
+    <title>Login</title>
+    {{template "components/header.html"}}
+
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/ny_bruger.css">
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/login.css">
+    <script src="/frontend/js/pages/login.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <main>
+        {{template "components/theme_button.html"}}
+        {{template "components/taskbar.html"}}
+        <div class="wrapper">
+            <div class="filler">
+            </div>
+            <div class="main_section">
+
+                <div class="section_one">
+
+                    {{template "components/status_msg.html"}}
+                    <br>
+                    <div class="input_holder">
+                        <label for="username_input" class="input_label">Brugernavn:</label>
+                        <input type="text" id="username_input" class="cust_input" placeholder="Brugernavn/Email">
+                    </div>
+                    <br>
+                    <div class="input_holder">
+                        <label for="password_input" class="input_label">Kodeord:</label>
+                        <input type="text" id="password_input" class="cust_input" placeholder="Kodeord">
+                    </div>
+                </div>
+                <div class="section_two">
+                    <button class="cust_button" id="login_button">Login</button>
+                    <br>
+                    <button class="cust_button" id="user_button">Ny bruger</button>
+                </div>
+
+            </div>
+        </div>
+        {{template "components/footer.html"}}
+    </main>
+</body>
+
+</html>

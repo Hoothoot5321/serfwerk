@@ -1,0 +1,18 @@
+{{define "components/taskbar.html"}}
+<link rel="stylesheet" type="text/css" href="/frontend/css/components/taskbar.css">
+<div class="taskbar">
+    {{template "components/title_card.html"}}
+    <div class="links_part taskbar_sub_elem">
+        <a href="/">Forside</a>
+        <a href="/om_os">Om os</a>
+        <a href="/priser">Priser</a>
+        <a href="/hjælp">Hjælp</a>
+    </div>
+
+    <div class="login_part taskbar_sub_elem">
+        <a href="/ny_bruger">Ny bruger</a>
+        <a href="/login">Login</a>
+    </div>
+
+</div>
+{{end}}

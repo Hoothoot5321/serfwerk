@@ -1,0 +1,20 @@
+.app_wrapper {
+    width: calc(100% - 2*0.5vw);
+    min-height: calc(33% - 2*0.5vw);
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--col);
+    color: var(--bg-col);
+
+    border: solid;
+    border-width: 0.5vw;
+    border-color: var(--bg-col);
+
+}
+
+.app_name {
+    margin-left: 1vw;
+}

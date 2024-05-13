@@ -1,0 +1,24 @@
+{{define "components/user_taskbar.html"}}
+<link rel="stylesheet" type="text/css" href="/frontend/css/components/taskbar.css">
+<link rel="stylesheet" type="text/css" href="/frontend/css/components/user_taskbar.css">
+<script src="/frontend/js/components/user_taskbar.js" defer type="module"></script>
+<div class="taskbar">
+    {{template "components/title_card.html"}}
+    <div class="links_part taskbar_sub_elem">
+        <a href="/user">Apps</a>
+        <a href="/user/ny_app">Ny app</a>
+        <a href="/user/hjælp">Hjælp</a>
+    </div>
+
+    <div class="login_part taskbar_sub_elem">
+        <div class="dropdown">
+            <button class="name_button">{{.}}</button>
+            <div class="dropdown_list">
+                <button class="dropdown_elem" id="dropdown_user_button">Bruger</button>
+                <button class="dropdown_elem" id="dropdown_logout_button">Logud</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+{{end}}

@@ -1,0 +1,43 @@
+.taskbar {
+    position: fixed;
+    top: 0px;
+    background: var(--accent);
+    display: flex;
+    flex-direction: row;
+    color: var(--bg-col);
+    justify-content: space-between;
+    width: 100vw;
+    height: 5vw;
+    max-height: 5vw;
+    border-bottom: solid;
+    border-width: 0.5vw;
+    border-color: var(--col);
+    overflow: visible;
+}
+
+
+
+.taskbar_sub_elem {
+
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}
+
+.taskbar_sub_elem>a {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.5vw;
+    color: var(--bg-col);
+    text-decoration: none;
+    padding-top: 0.5vw;
+    padding-left: 2vw;
+
+    padding-right: 2vw;
+}
+
+.taskbar_sub_elem>a:hover {
+    background: var(--bg-col);
+    color: var(--accent);
+}

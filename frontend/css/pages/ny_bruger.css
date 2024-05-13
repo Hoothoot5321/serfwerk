@@ -1,0 +1,94 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.filler {
+    height: 6vw;
+}
+
+.main_section {
+    height: 70%;
+    width: 70%;
+    background-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section_one {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_holder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input_label {
+    font-size: 3vw;
+}
+
+.cust_input {
+    width: 50%;
+
+    font-size: 1.5vw;
+    background-color: var(--bg-col);
+    color: var(--col);
+    border: none;
+    outline: none;
+}
+
+.cust_input:hover {
+
+    background-color: var(--col);
+    color: var(--bg-col);
+}
+
+.cust_input:focus {
+    background-color: var(--col);
+
+    border: solid;
+    border-color: var(--bg-col);
+
+    color: var(--bg-col);
+}
+
+.cust_button {
+    width: 30%;
+    height: 3vw;
+    font-size: 2vw;
+    outline: none;
+    border: none;
+    background-color: var(--bg-col);
+    color: var(--col);
+}
+
+
+.cust_button:hover {
+
+    background-color: var(--col);
+    color: var(--bg-col);
+}
+
+.cust_button:focus {
+    border: solid;
+    border-color: var(--bg-col);
+}

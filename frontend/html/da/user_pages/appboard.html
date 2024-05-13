@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <title>{{.User.Username}}</title>
+    {{template "components/header.html"}}
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/appboard.css">
+</head>
+
+<body>
+    <main>
+        {{template "components/theme_button.html"}}
+        {{template "components/user_taskbar.html" .User.Username}}
+        <div class="wrapper">
+            <div class="filler"></div>
+            <div class="main_section">
+                <h1>Dine apps</h1>
+                <div class="app_holder">
+                    {{range .Apps}}
+                    {{template "components/app_elem.html" .}}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{template "components/footer.html"}}
+    </main>
+</body>
+
+</html>

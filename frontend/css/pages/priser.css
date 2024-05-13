@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.filler {
+    height: 6vw;
+}
+
+.main_section {
+    height: 70%;
+    width: 70%;
+    background-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_label {
+    font-size: 1.5vw;
+}
+
+.price_label {
+    font-size: 3vw;
+}
+
+.input_holder {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.custom_input {
+    background-color: var(--bg-col);
+    width: 15%;
+    font-size: 2vw;
+    color: var(--col);
+    outline: none;
+    border: none;
+}
+
+.custom_slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90%;
+    height: 2vw;
+    border-radius: 3vw;
+    background-color: var(--bg-col);
+    opacity: 0.7;
+    outline: none;
+    transition: 0.2s;
+}
+
+.custom_slider:hover {
+    opacity: 0.9;
+}
+
+.custom_slider::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--col);
+    border-radius: 3vw;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--col);
+    cursor: pointer;
+}

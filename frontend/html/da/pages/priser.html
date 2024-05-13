@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <title>Priser</title>
+    {{template "components/header.html"}}
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/priser.css">
+
+</head>
+
+<body>
+    <main>
+
+        {{template "components/theme_button.html"}}
+        {{template "components/taskbar.html"}}
+        <div class="wrapper">
+            <div class="filler"></div>
+
+            <script src="/frontend/js/pages/priser.js" defer></script>
+            <div class="main_section">
+                <h1 class="input_label">
+                    Ram(MB)[1024-4096]
+                </h1>
+                <div class="input_holder">
+                    <input type="number" id="ram_input" class="custom_input" value="1024" min="1024" max="4096">
+                    <input id="ram_slider" type="range" min="1024" max="4096" value="1024" class="custom_slider"
+                        step="512">
+                </div>
+
+                <h1 class="input_label">
+                    Lager(MB)[2048-30720]
+                </h1>
+                <div class="input_holder">
+                    <input type="number" id="lager_input" class="custom_input" value="2048" min="2048" max="30720">
+                    <input id="lager_slider" type="range" min="2048" max="30720" value="2048" class="custom_slider"
+                        step="512">
+                </div>
+
+                <h1 class="input_label">
+                    CPU'er[1-4]
+                </h1>
+                <div class="input_holder">
+                    <input type="number" id="cpu_input" class="custom_input" value="1" min="1" max="4">
+                    <input id="cpu_slider" type="range" min="1" max="4" value="1" class="custom_slider">
+                </div>
+
+                <h1 class="input_label">
+                    Maks CPU kraft(%)[10-100]
+                </h1>
+                <div class="input_holder">
+                    <input type="number" id="cpu_kraft_input" class="custom_input" value="50" min="50" max="100">
+                    <input id="cpu_kraft_slider" type="range" min="50" max="100" value="50" class="custom_slider"
+                        step="5">
+                </div>
+                <div>
+                    <h1 class="price_label" id="pricer">Pris: 0kr.</h1>
+                </div>
+            </div>
+        </div>
+        {{template "components/footer.html"}}
+    </main>
+</body>
+
+</html>
