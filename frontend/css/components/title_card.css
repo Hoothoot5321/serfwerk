@@ -1,0 +1,15 @@
+.title_card {
+    display: inline;
+}
+
+.title_img {
+    height: 3.5vw;
+    display: inline;
+}
+
+.title {
+    display: inline;
+    font-size: 4vw;
+    text-decoration: none;
+    color: var(--bg-col);
+}

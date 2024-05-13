@@ -1,0 +1,51 @@
+{{define "pages/loading.html"}}
+<html>
+
+<head>
+
+    <script src="/assets/js/get_page.js" type="module"></script>
+    <style>
+        :root {
+            margin: 0px;
+        }
+
+        body,
+        main {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+
+        .vertical_wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .horizontal_wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="horizontal_wrapper">
+            <div class="vertical_wrapper">
+                <h1>Serfwerk</h1>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+{{ end }}

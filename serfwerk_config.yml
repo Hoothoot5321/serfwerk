@@ -1,0 +1,7 @@
+tunnel: 2b3df3cc-ad12-476f-97c4-d25600a48a6c
+credentials-file: C:\\Users\\MartinNammat\\.cloudflared\\2b3df3cc-ad12-476f-97c4-d25600a48a6c.json
+
+ingress:
+- hostname: serfwerk.online
+  service: http://192.168.1.12:8080
+- service: http_status:404

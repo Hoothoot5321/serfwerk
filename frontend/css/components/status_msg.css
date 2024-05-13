@@ -1,0 +1,19 @@
+.status_text {
+    font-size: 2vw;
+}
+
+.status_holder {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.ok {
+    color: #7ae876;
+}
+
+.err {
+    color: #f76a54;
+}

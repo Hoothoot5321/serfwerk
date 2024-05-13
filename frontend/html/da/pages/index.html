@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <title>Serfwerk</title>
+    {{template "components/header.html"}}
+    <link rel="stylesheet" type="text/css" href="/frontend/css/pages/index.css">
+
+</head>
+
+<body>
+    <main>
+
+        {{template "components/theme_button.html"}}
+        {{template "components/taskbar.html"}}
+
+        <div class="wrapper">
+            <div class="title_page_section left">
+                <h1 class="big_text">Brugte bærbarer<br>som servere</h1>
+            </div>
+            <div class="page_section right">
+                <div class="inner_section left">
+                    <div class="half_section ">
+                        <h2 class="sub_title">Mange brugte bærbare</h2>
+                        <p class="sub_text">Hvis man kigger på online forhandlere
+                            som Blå eller Gul avis, finder man mange
+                            brugte bærbare til salg.
+                            <br>
+
+                            <br>
+
+                            Mange af de bærbare har lægget til salg
+                            i flere år uden at blive solgt.<br>
+                            Det er meget computerkraft som går til spilde.
+                            Hos Serfwerk vil vi opkøbe disse computere,
+                            og sælge det som servere.
+                        </p>
+                    </div>
+                    <div class="half_section img_section">
+                        <img src="/frontend/assets/computere.png" alt="billede af computere">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_section left">
+
+                <div class="inner_section right">
+                    <div class="half_section img_section">
+                        <img src="/frontend/assets/server_types.webp" alt="billede af server types">
+                    </div>
+                    <div class="half_section">
+                        <h2 class="sub_title">Servere til alting</h2>
+                        <p class="sub_text">Der er ingen grænse på hvad for nogle servere man vil lave.
+                            Serfwerks arkitektur er designet til at kunne understøtte alle former for server,
+                            om det er en database, hjemmeside eller spilserver man vil uploade vil Serfwerk kunne
+                            hoste
+                            det.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_section right">
+
+                <div class="inner_section left">
+                    <div class="half_section">
+                        <h2 class="sub_title">Nemt at uploade apps</h2>
+                        <p class="sub_text">Hos Serwerk det meget nemt at uploade apps.
+                            Selvom at der endnu ikke er blevet lavet Github
+                            integration, kan man nemt uploade ens app
+                            ved zip fil.
+                            <br>
+                            Så skal man bare indtaste kommandoen
+                            for at bygge, og kører programmet. Efter dette
+                            vil appen efter et stykke tid være bygget og
+                            uploadet på nettet.
+                        </p>
+                    </div>
+                    <div class="half_section img_section">
+                        <img src="/frontend/assets/zip_file.jpg" alt="billede af zip fil logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{template "components/footer.html"}}
+    </main>
+
+</body>
+
+</html>
